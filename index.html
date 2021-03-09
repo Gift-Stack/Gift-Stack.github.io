@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio || Opia Gift's web page and portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <body>
     <div class="jumbotron">
       <div class="first-img"></div>
@@ -22,7 +25,7 @@
       </nav>
       <div class="text">
         <h1>G<span class="white">!</span>FT OP<span class="white">!</span>A</h1>
-        <p>
+        <p data-aos="zoom-in-left" data-aos="">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui tempora
           dignissimos vel dolorem ad quia eius voluptate fugiat delectus
           sapiente? Nemo obcaecati aperiam facilis placeat molestias mollitia
@@ -39,7 +42,7 @@
       </div>
     </div>
     <section id="projects" class="projects section">
-      <div class="grid">
+      <div data-aos="fade-right" class="grid">
         <img src="./img/resume.jpg" alt="" />
         <p>Resume Crafter</p>
         <div class="overview">
@@ -50,7 +53,7 @@
           </div>
         </div>
       </div>
-      <div class="grid">
+      <div data-aos="zoom-in-up" class="grid">
         <img src="./img//eleos.jpg" alt="" />
         <p>Interior blog</p>
         <div class="overview">
@@ -60,7 +63,7 @@
           </div>
         </div>
       </div>
-      <div class="grid">
+      <div data-aos="zoom-in-up" class="grid">
         <img src="" alt="" />
         <p>Perpetual Kinetic Loader</p>
         <div class="overview">
@@ -70,7 +73,7 @@
           </div>
         </div>
       </div>
-      <div class="grid">
+      <div data-aos="fade-left" class="grid">
         <img src="./img//movie.jpg" alt="" />
         <p>Movie Info App</p>
         <div class="overview">
@@ -83,5 +86,11 @@
       </div>
     </section>
     <section id="contact" class="contact section"></section>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
